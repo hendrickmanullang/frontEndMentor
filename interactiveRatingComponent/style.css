@@ -69,11 +69,40 @@ main {
   margin: auto 0;
   background-color: var(--dark-blue);
   border-radius: 1rem;
-  padding: 2rem;
+  position: relative;
+  overflow-x: hidden;
+}
 
+.rating-component,
+.modal-component {
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.modal-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.closed {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+  height: 100%;
+  pointer-events: auto;
 }
 
 .round-icon {
@@ -87,8 +116,14 @@ main {
   transition: all 0.2s;
 }
 
-.card-description {
+.rating-description,
+.modal-description {
   max-width: 22rem;
+}
+
+.modal-description,
+.modal-title {
+  text-align: center;
 }
 
 .rating-container {
@@ -125,4 +160,20 @@ main {
 
 .selected {
   background-color: var(--medium-grey);
+}
+
+.modal-img {
+  display: block;
+  margin: auto;
+}
+
+.modal-span-container {
+  text-align: center;
+}
+
+.modal-summary {
+  color: var(--orange);
+  background-color: hsl(216, 12%, 25%);
+  border-radius: 2rem;
+  padding: 0.7rem;
 }

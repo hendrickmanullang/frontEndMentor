@@ -18,3 +18,15 @@ ratingButtons.forEach((button) => {
     button.classList.remove("hover");
   });
 });
+
+const submitButton = document.querySelector(".btn--submit");
+
+submitButton.addEventListener("click", () => {
+  const ratingValue = document.querySelector(".selected").textContent;
+  const ratingResult = document.querySelector(".rating-result");
+  ratingResult.textContent = ratingValue;
+  const modalComponent = document.querySelector(".modal-component");
+  const ratingComponent = document.querySelector(".rating-component");
+  ratingComponent.classList.add("closed");
+  modalComponent.classList.add("open");
+});
