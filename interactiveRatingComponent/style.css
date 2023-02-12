@@ -101,8 +101,7 @@ main {
   cursor: pointer;
 }
 
-.rating-selection:hover,
-.rating-selection:active {
+.hover {
   background-color: var(--orange);
 }
 
