@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-product-card-8hSMLc2FGO)
 - [Live Site](https://remarkable-snickerdoodle-735e9b.netlify.app/)
 
 ### What I learned
