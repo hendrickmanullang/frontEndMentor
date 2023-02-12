@@ -76,6 +76,17 @@ main {
   gap: 2rem;
 }
 
+.round-icon {
+  background-color: hsl(216, 12%, 25%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
 .card-description {
   max-width: 22rem;
 }
@@ -87,6 +98,12 @@ main {
 
 .rating-selection {
   list-style-type: none;
+  cursor: pointer;
+}
+
+.rating-selection:hover,
+.rating-selection:active {
+  background-color: var(--orange);
 }
 
 .btn--submit {
@@ -97,14 +114,12 @@ main {
   border-radius: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.round-icon {
-  background-color: hsl(216, 12%, 25%);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn--submit:hover,
+.btn--submit:active {
+  background-color: var(--white);
+  color: var(--orange);
 }
