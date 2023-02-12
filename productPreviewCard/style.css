@@ -41,14 +41,13 @@ body {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .product {
   background-color: var(--white);
-  height: 28rem;
   max-width: 38rem;
   border-radius: 1rem;
   margin: auto 0;

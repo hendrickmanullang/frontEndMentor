@@ -7,13 +7,11 @@
 @media (max-width: 28em) {
   .product {
     grid-template-columns: 1fr;
-    height: auto;
-    width: 90vw;
+    max-width: 90vw;
   }
 
   .product-image {
-    min-height: 30vh;
+    min-height: 20vh;
     background-image: url("image-product-mobile.jpg");
-    background-size: cover;
   }
 }
