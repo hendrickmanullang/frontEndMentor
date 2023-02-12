@@ -1,0 +1,11 @@
+@media (max-width: 30em) {
+  .card-container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 24em) {
+  .card-container {
+    min-width: 90vw;
+  }
+}
