@@ -123,3 +123,7 @@ main {
   background-color: var(--white);
   color: var(--orange);
 }
+
+.selected {
+  background-color: var(--medium-grey);
+}
