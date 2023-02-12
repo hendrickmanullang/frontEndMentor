@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-with-js-tKFVTf4niZ)
 - [Live Site](https://lucent-sunburst-ea6afd.netlify.app/)
 
 ### What I learned
