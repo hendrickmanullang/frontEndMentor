@@ -1,6 +1,6 @@
 // rating component
 
-const ratingButtons = document.querySelectorAll(".rating-selection");
+const ratingButtons = document.querySelectorAll(".round-icon.rating");
 ratingButtons.forEach((button) => {
   button.addEventListener("click", () => {
     ratingButtons.forEach((button) => {

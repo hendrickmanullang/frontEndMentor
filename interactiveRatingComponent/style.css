@@ -68,9 +68,10 @@ main {
 .card-container {
   margin: auto 0;
   background-color: var(--dark-blue);
-  border-radius: 1rem;
+  border-radius: 2rem;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .rating-component,
@@ -92,7 +93,7 @@ main {
   visibility: hidden;
 }
 
-.closed {
+.hidden {
   opacity: 0;
   visibility: hidden;
 }
@@ -119,6 +120,14 @@ main {
 .rating-description,
 .modal-description {
   max-width: 22rem;
+}
+
+.rating-fieldset {
+  border: none;
+}
+
+.rating-input {
+  display: none;
 }
 
 .modal-description,
