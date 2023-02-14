@@ -3,6 +3,7 @@
 const ratingButtons = document.querySelectorAll(".round-icon.rating");
 ratingButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    document.querySelector(".btn--submit").disabled = false;
     ratingButtons.forEach((button) => {
       button.classList.remove("selected");
     });
