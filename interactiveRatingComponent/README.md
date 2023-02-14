@@ -25,6 +25,7 @@ Users should be able to:
 ### What I learned
 
 - Set ```overflow-x``` property to ```hidden``` to disable x scroll if you have hidden horizontal properties
+- Use ```radio``` for inputs that need to be exclusive and wrap it in ```forms``` so that the data can be submitted <em>(shout out to [@Valentine-D3V](https://github.com/Valentine-D3V) for the feedback on FEM)</em>.
 
 ### Continued development
 
