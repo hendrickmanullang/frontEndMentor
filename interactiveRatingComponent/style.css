@@ -68,9 +68,10 @@ main {
 .card-container {
   margin: auto 0;
   background-color: var(--dark-blue);
-  border-radius: 1rem;
+  border-radius: 2rem;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .rating-component,
@@ -92,7 +93,7 @@ main {
   visibility: hidden;
 }
 
-.closed {
+.hidden {
   opacity: 0;
   visibility: hidden;
 }
@@ -113,7 +114,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.3s;
+}
+
+.round-icon.rating,
+.rating-label {
+  cursor: pointer;
 }
 
 .rating-description,
@@ -121,13 +127,30 @@ main {
   max-width: 22rem;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rating-fieldset {
+  border: none;
+  display: flex;
+}
+
 .modal-description,
 .modal-title {
   text-align: center;
 }
 
+.rating-input {
+  appearance: none;
+  width: 0;
+}
+
 .rating-container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -150,6 +173,7 @@ main {
   letter-spacing: 0.2rem;
   cursor: pointer;
   transition: all 0.2s;
+  width: 100%;
 }
 
 .btn--submit:hover,
