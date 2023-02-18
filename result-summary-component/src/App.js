@@ -1,4 +1,4 @@
-import Result from "./Components/result";
+import Result from "./Components/Result";
 import { data } from "./data.js";
 
 const App = () => {
