@@ -23,3 +23,4 @@ Users should be able to:
 ### What I learned
 
 - You can use the ```currentColor``` to inherit the parent's color property if you do not currently have a color set to your child selector (useful if you want to use the value of the parent's color property on something other than color)
+- There should be only one ```H1``` element per page - shoutout to [@emestabillo](https://github.com/emestabillo) for the reminder on FEM.
