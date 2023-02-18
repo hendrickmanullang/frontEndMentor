@@ -1,0 +1,55 @@
+html {
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+.color-red {
+  color: var(--light-red);
+}
+
+.color-yellow {
+  color: var(--orange-yellow);
+}
+
+.color-teal {
+  color: var(--green-teal);
+}
+
+.color-blue {
+  color: var(--cobalt-blue);
+}
+
+.bg-red {
+  background-color: hsl(6, 100%, 98%);
+}
+
+.bg-yellow {
+  background-color: hsl(42, 100%, 97%);
+}
+
+.bg-teal {
+  background-color: hsl(173, 53%, 97%);
+}
+
+.bg-blue {
+  background-color: hsl(240, 71%, 97%);
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.skill-category {
+  display: flex;
+  gap: 1rem;
+}
+
+.skill-max-score {
+  color: rgb(160, 155, 162);
+}

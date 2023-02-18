@@ -1,4 +1,5 @@
-import Result from "./Components/Result";
+import Result from "./Components/Result/Result";
+import Summary from "./Components/Summary/Summary";
 import { data } from "./data.js";
 
 const App = () => {
@@ -6,7 +7,12 @@ const App = () => {
   const sumScore = scores.reduce((a, b) => a + b);
   const averageScore = sumScore / scores.length;
 
-  return <Result rating={averageScore} />;
+  return (
+    <>
+      <Result rating={averageScore} />
+      <Summary data={data} />
+    </>
+  );
 };
 
 export default App;
