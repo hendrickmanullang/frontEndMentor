@@ -42,6 +42,7 @@ Typography
 }
 
 main {
+  padding: 1rem 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,7 +55,13 @@ main {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1.125rem;
+  gap: 2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .card-container:first-of-type {
@@ -87,7 +94,7 @@ main {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   color: white;
 }
 
@@ -100,17 +107,19 @@ main {
   color: rgba(255, 255, 255, 0.7);
   font-size: calc(15rem / 16);
   line-height: 1.5rem;
+  max-width: 20rem;
 }
 
 .btn--learn-more:link,
 .btn--learn-more:visited {
   text-decoration: none;
   background-color: white;
-  color: currentColor;
+  color: inherit;
   border-radius: 2rem;
   text-transform: capitalize;
   padding: 1rem 2rem;
   max-width: fit-content;
+  transition: background-color 0.2s;
 }
 
 .btn--learn-more:hover,

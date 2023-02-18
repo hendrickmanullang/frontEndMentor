@@ -1,0 +1,32 @@
+@media (min-width: 60rem) {
+  main {
+    padding: 0 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-description {
+    max-width: 14rem;
+    flex-shrink: 0;
+  }
+
+  .card-content {
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    margin: 0;
+  }
+
+  .card-container:first-of-type {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .card-container:last-of-type {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
