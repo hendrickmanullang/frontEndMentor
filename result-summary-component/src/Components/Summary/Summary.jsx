@@ -13,6 +13,7 @@ const Summary = ({ data }) => {
           icon={entry.icon}
         />
       ))}
+      {/* need to fix hover states with CSS Transition*/}
       <button className={styles["btn--continue"]}>Continue</button>
     </div>
   );
