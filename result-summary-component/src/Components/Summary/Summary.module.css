@@ -19,6 +19,7 @@
   padding: 0.8rem;
   font-size: calc(18rem / 16);
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .btn--continue:hover {
