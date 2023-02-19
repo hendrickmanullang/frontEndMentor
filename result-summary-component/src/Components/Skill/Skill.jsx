@@ -24,7 +24,7 @@ const Skill = (props) => {
           colorMapping[props.category]["color"]
         )}
       >
-        <img src={props.icon} alt=" " />
+        <img src={props.icon} alt="" />
         <p className="skill-name">{props.category}</p>
       </div>
       <p>
