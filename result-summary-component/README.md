@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Add solution URL here](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/result-component-with-react-and-css-modules-VVBXUyhzw8)
 - [Live URL](https://cool-pothos-1ecd2e.netlify.app)
 
 ## My process
