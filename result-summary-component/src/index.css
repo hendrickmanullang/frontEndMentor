@@ -13,3 +13,26 @@ html {
   --violet-blue: hsla(256, 72%, 46%, 1);
   --persian-blue: hsla(241, 72%, 46%, 0);
 }
+
+.main-container {
+  min-width: 16rem;
+}
+
+@media (min-width: 40em) {
+  main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 40rem;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 20rem hsla(252, 100%, 50%, 0.157);
+  }
+}
