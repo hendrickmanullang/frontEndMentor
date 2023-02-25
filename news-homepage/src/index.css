@@ -18,4 +18,10 @@
 body {
   font-size: calc(15rem / 16);
   font-family: "Inter", sans-serif;
+  background-color: var(--clr-neutral);
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
 }
