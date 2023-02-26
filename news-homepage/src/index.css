@@ -20,8 +20,3 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--clr-neutral);
 }
-
-.flex-container {
-  display: flex;
-  align-items: center;
-}

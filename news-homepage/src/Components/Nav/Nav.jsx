@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
@@ -13,20 +13,20 @@ const Nav = () => {
     setShowNavMenu(!showNavMenu);
   };
 
-  useEffect(() => {}, [showNavMenu]);
-
   return (
-    <header className={styles["header"]}>
-      <a href="#">
-        <img className={styles["logo"]} src="./assets/logo.svg" alt="" />
+    <header className={styles.header}>
+      <a href="/">
+        <img className={styles.logo} src="./assets/logo.svg" alt="" />
       </a>
-      <nav className="flex-container">
-        <ul className={`${styles["main-nav"]} ${styles["open"]}`}>
-          {navItems.map((entry) => (
-            <li className={styles["nav-items"]} key={entry}>
-              {entry}
-            </li>
-          ))}
+      <nav className={styles["nav-container"]}>
+        <ul className={`${styles["main-nav"]} ${!showNavMenu && styles.hidden}`}>
+          <div
+            className={`${styles["nav-items"]} ${showNavMenu && styles.open}`}
+          >
+            {navItems.map((entry) => (
+              <li key={entry}>{entry}</li>
+            ))}
+          </div>
         </ul>
         <button className={styles["icon-menu"]} onClick={handleMenu}>
           <img src={iconMenuSrc} alt="" />
