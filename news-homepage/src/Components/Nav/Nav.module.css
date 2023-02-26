@@ -14,24 +14,34 @@
   background-color: inherit;
   display: flex;
   align-items: center;
+  z-index: 9999;
+}
+
+.header {
+  position: relative;
 }
 
 .main-nav {
-  display: flex;
-  /* Hide navigation */
+  display: none;
+}
 
-  /* Hide element visually*/
-  opacity: 0;
-
-  /* Make it unaccessible to mouse and keyboard */
-  pointer-events: none;
-
-  /* hide it from screen readers */
-  visibility: hidden;
+@media (max-width: 40rem) {
+  .open {
+    padding: 5rem 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    gap: 1rem;
+    width: 60vw;
+  }
 }
 
 @media (min-width: 40rem) {
   .main-nav {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;

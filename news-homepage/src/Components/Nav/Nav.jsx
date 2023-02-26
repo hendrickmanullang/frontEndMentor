@@ -21,7 +21,7 @@ const Nav = () => {
         <img className={styles["logo"]} src="./assets/logo.svg" alt="" />
       </a>
       <nav className="flex-container">
-        <ul className={styles["main-nav"]}>
+        <ul className={`${styles["main-nav"]} ${styles["open"]}`}>
           {navItems.map((entry) => (
             <li className={styles["nav-items"]} key={entry}>
               {entry}
